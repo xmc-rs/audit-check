@@ -2,7 +2,7 @@
  * Parse action input into a some proper thing.
  */
 
-import { input } from '@actions-rs/core';
+import { input } from '@xmc-rs/core';
 
 // Parsed action input
 export interface Input {

@@ -18,7 +18,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/actions-rs/audit.git"
+        "url": "git+https://github.com/xmc-rs/audit.git"
     },
     "keywords": [
         "actions",
@@ -28,10 +28,10 @@
         "security",
         "advisory"
     ],
-    "author": "actions-rs",
+    "author": "xmc-rs",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/actions-rs/audit-check/issues"
+        "url": "https://github.com/xmc-rs/audit-check/issues"
     },
     "dependencies": {
         "@xmc-rs/core": "1.0.0",

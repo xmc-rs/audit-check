@@ -1,7 +1,7 @@
 # Rust `audit-check` Action
 
 ![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)
-[![Gitter](https://badges.gitter.im/actions-rs/community.svg)](https://gitter.im/actions-rs/community)
+[![Gitter](https://badges.gitter.im/xmc-rs/community.svg)](https://gitter.im/xmc-rs/community)
 
 > Security vulnerabilities audit
 
@@ -20,7 +20,7 @@ and execute this Action to check the changed dependencies:
 name: Security audit
 on:
   push:
-    paths: 
+    paths:
       - '**/Cargo.toml'
       - '**/Cargo.lock'
 jobs:
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: actions-rs/audit-check@v1
+      - uses: xmc-rs/audit-check@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -48,7 +48,7 @@ Note that informational advisories are not affecting the check status.
 
 Due to [token permissions](https://help.github.com/en/articles/virtual-environments-for-github-actions#token-permissions),
 this Action **WILL NOT** be able to create Checks for Pull Requests from the forked repositories,
-see [actions-rs/clippy-check#2](https://github.com/actions-rs/clippy-check/issues/2) for details.\
+see [xmc-rs/clippy-check#2](https://github.com/xmc-rs/clippy-check/issues/2) for details.\
 As a fallback this Action will output all found advisories to the stdout.\
 It is expected that this behavior will be fixed later by GitHub.
 
@@ -67,7 +67,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: actions-rs/audit-check@v1
+      - uses: xmc-rs/audit-check@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 ```

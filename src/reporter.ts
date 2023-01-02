@@ -4,7 +4,7 @@ import * as core from '@actions/core';
 import * as github from '@actions/github';
 import * as nunjucks from 'nunjucks';
 
-import { checks } from '@actions-rs/core';
+import { checks } from '@xmc-rs/core';
 import * as interfaces from './interfaces';
 import * as templates from './templates';
 
@@ -155,7 +155,7 @@ export async function reportCheck(
             );
             core.warning(`GitHub Actions are not allowed to use Check API, \
 when executed for a forked repos. \
-See https://github.com/actions-rs/clippy-check/issues/2 for details.`);
+See https://github.com/xmc-rs/clippy-check/issues/2 for details.`);
             core.info('Posting audit report here instead.');
 
             core.info(makeReport(vulnerabilities, warnings));
