@@ -1,6 +1,6 @@
 {
     "name": "rust-audit-check",
-    "version": "1.2.0",
+    "version": "1.0.0",
     "private": false,
     "description": "Security audit for security vulnerabilities",
     "main": "lib/main.js",
@@ -34,7 +34,7 @@
         "url": "https://github.com/actions-rs/audit-check/issues"
     },
     "dependencies": {
-        "@actions-rs/core": "0.0.9",
+        "@xmc-rs/core": "1.0.0",
         "@actions/core": "1.10.0",
         "@actions/github": "2.2.0",
         "npm-check-updates": "4.1.2",
@@ -50,7 +50,7 @@
         "@types/jest": "25.2.3",
         "@types/node": "18.11.18",
         "@zeit/ncc": "0.22.3",
-        "jest": "26.0.1",
+        "jest": "25",
         "jest-circus": "26.0.1",
         "ts-jest": "25.5.1",
         "typescript": "3.9.10",
