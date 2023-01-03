@@ -1,6 +1,9 @@
 name: Continuous integration
 
-on: [pull_request, push]
+on:
+  pull_request:
+  push:
+
 
 jobs:
   main:
@@ -10,8 +13,8 @@ jobs:
         run: echo "//npm.pkg.github.com/:_authToken=${token}" >> ~/.npmrc
         env:
           token: ${{ secrets.GH_PERSONAL_TOKEN }}
-
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
       - run: npm ci
       - run: npm run lint
       - run: npm run build
