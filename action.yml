@@ -1,4 +1,4 @@
-name: 'rust-audit-check'
+name: 'xmc-rust-audit-check'
 description: 'Run cargo audit and check for security advisories'
 author: 'xmc-rs team'
 branding:
@@ -10,5 +10,5 @@ inputs:
     required: true
 
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
