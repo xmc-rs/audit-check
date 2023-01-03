@@ -37,7 +37,7 @@
         "@actions/core": "1.10.0",
         "@actions/github": "2.2.0",
         "@xmc-rs/core": "1.0.1",
-        "npm-check-updates": "15.0.0",
+        "npm-check-updates": "15.0.5",
         "nunjucks": "3.2.3"
     },
     "devDependencies": {
