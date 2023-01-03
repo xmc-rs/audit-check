@@ -97,7 +97,7 @@ async function main(): Promise<void> {
     try {
         const actionInput = input.get();
         await run(actionInput);
-    } catch (error) {
+    } catch (error: any) {
         core.setFailed(error.message);
     }
 
