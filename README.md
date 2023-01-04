@@ -1,7 +1,6 @@
 # Rust `audit-check` Action
 
 ![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)
-[![Gitter](https://badges.gitter.im/xmc-rs/community.svg)](https://gitter.im/xmc-rs/community)
 
 > Security vulnerabilities audit
 
